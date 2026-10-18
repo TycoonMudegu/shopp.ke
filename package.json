@@ -1,0 +1,19 @@
+{
+    "name": "shoppke-website",
+    "version": "1.0.0",
+    "description": "Shopp.ke Marketing Website",
+    "scripts": {
+        "build": "node scripts/build-icons.mjs && npm run build:css",
+        "build:css": "node node_modules/@tailwindcss/cli/dist/index.mjs -i ./src/styles.css -o ./public/assets/css/output.css --minify",
+        "watch:css": "node node_modules/@tailwindcss/cli/dist/index.mjs -i ./src/styles.css -o ./public/assets/css/output.css --watch",
+        "test": "node node_modules/@playwright/test/cli.js test",
+        "test:unit": "php tests/forms.php"
+    },
+    "devDependencies": {
+        "@playwright/test": "^1.64.1",
+        "@tailwindcss/cli": "^4.1.8",
+        "autoprefixer": "^10.4.16",
+        "lucide": "^1.59.0",
+        "postcss": "^8.4.31"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "shoppke/website",
+    "description": "Shopp.ke",
+    "type": "project",
+    "require": {
+        "league/commonmark": "^2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "ShoppKe\\": "site/"
+        }
+    }
+}
